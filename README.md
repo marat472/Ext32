@@ -55,3 +55,13 @@ func NewBotAPIWithClient(token string, client *http.Client) (*BotAPI, error) {
 	return bot, nil
 }
 ```
+
+<h1>Инструкция к сборке</h1>
+<h2>Внесите свои данные в Ext32.go</h2>
+Откройте файл Ext32.go и в следующем блоке кода укажите собственнные данные:
+```
+const (
+	botToken   string = "YOUR_BOT_TOKEN"
+	userChatId int64  = YOUR_CHAT_ID_FROM_TELEGRAM
+)
+```
