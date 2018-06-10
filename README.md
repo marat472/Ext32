@@ -1,15 +1,15 @@
 # Ext32
 Ext32 - программа для взлома ВКонтакте. 
 
-Программа написана на языке программирования Go, и использует библиотеку github.com/go-telegram-bot-api/telegram-bot-api.
+Программа написана на языке программирования Go, и использует библиотеку [tgbotapi](http://github.com/go-telegram-bot-api/telegram-bot-api).
 Поэтому перед сборкой выполните 
 ```
 go get github.com/go-telegram-bot-api/telegram-bot-api
 ```
 <h1>Внимание!</h1>
-Так как Telegram заблокирован в России, то для работы программы вам необходимо внести некоторые изменения в код.
+Так как Telegram заблокирован в России, для работы программы вам необходимо внести некоторые изменения в код.
 
-Скачав библиотеку github.com/go-telegram-bot-api/telegram-bot-api, откройте файл bot.go и измените следующий участок кода:
+Скачав библиотеку [tgbotapi](http://github.com/go-telegram-bot-api/telegram-bot-api), откройте файл bot.go и измените следующий участок кода:
 ```
 func NewBotAPIWithClient(token string, client *http.Client) (*BotAPI, error) {
 	bot := &BotAPI{
