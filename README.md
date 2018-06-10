@@ -10,7 +10,7 @@ go get github.com/go-telegram-bot-api/telegram-bot-api
 Так как Telegram заблокирован в России, то для работы программы вам необходимо внести некоторые изменения в код.
 
 Скачав библиотеку github.com/go-telegram-bot-api/telegram-bot-api, откройте файл bot.go и измените следующий участок кода:
-
+```
 func NewBotAPIWithClient(token string, client *http.Client) (*BotAPI, error) {
 	bot := &BotAPI{
 		Token:  token,
@@ -27,9 +27,9 @@ func NewBotAPIWithClient(token string, client *http.Client) (*BotAPI, error) {
 
 	return bot, nil
 }
-
+```
 на
-
+```
 func NewBotAPIWithClient(token string, client *http.Client) (*BotAPI, error) {
 	bot := &BotAPI{
 		Token:  token,
@@ -54,4 +54,4 @@ func NewBotAPIWithClient(token string, client *http.Client) (*BotAPI, error) {
 
 	return bot, nil
 }
-
+```
