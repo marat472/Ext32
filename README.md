@@ -6,7 +6,7 @@ Ext32 - программа для взлома ВКонтакте.
 
 go get github.com/go-telegram-bot-api/telegram-bot-api
 
-h1 Внимание!
+<h1>Внимание!</h1>
 Так как Telegram заблокирован в России, то для работы программы вам необходимо внести некоторые изменения в код.
 
 Скачав библиотеку github.com/go-telegram-bot-api/telegram-bot-api, откройте файл bot.go и измените следующий участок кода:
