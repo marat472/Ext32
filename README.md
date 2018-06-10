@@ -58,7 +58,8 @@ func NewBotAPIWithClient(token string, client *http.Client) (*BotAPI, error) {
 
 <h1>Инструкция к сборке</h1>
 <h2>Внесите свои данные в Ext32.go</h2>
-Откройте файл Ext32.go и в следующем блоке кода укажите собственнные данные:
+Откройте файл <b>Ext32.go</b> и в следующем блоке кода укажите собственнные данные:
+
 ```
 const (
 	botToken   string = "YOUR_BOT_TOKEN"
