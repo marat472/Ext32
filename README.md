@@ -66,7 +66,9 @@ const (
 	userChatId int64  = YOUR_CHAT_ID_FROM_TELEGRAM
 )
 ```
+
 * Скомпилировать программу нужно со следующим флагом
+
 ```
 go build Ext32.go -ldflags -H=windowsgui
 ```
